@@ -1,0 +1,22 @@
+# ==============================================================================
+# Python Dependencies for Offline AI Vision-Based Navigation Robot
+# Target Platform: Raspberry Pi 5 (8GB) | OS: Raspberry Pi OS Bookworm (64-bit)
+# Python: 3.11+
+# ==============================================================================
+
+# Core Math & System Diagnostics
+numpy>=1.24.0
+psutil>=5.9.0
+
+# Computer Vision & GUI (Use opencv-python for GUI HUD, or opencv-python-headless for pure SSH)
+opencv-python>=4.8.0
+
+# Deep Learning Framework & Lightweight Model Inference
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.1.0
+
+# Raspberry Pi 5 Hardware GPIO & Hardware PWM (Raspberry Pi OS Bookworm)
+# Installed on Pi via: sudo apt install python3-gpiozero python3-lgpio
+gpiozero>=2.0
+lgpio>=0.2.2.0

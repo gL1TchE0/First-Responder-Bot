@@ -1,0 +1,59 @@
+# ==============================================================================
+# Git Ignore Configuration - Offline AI Vision-Based Navigation Robot
+# ==============================================================================
+
+# Project Documentation (Excluded from GitHub repository push)
+DOCUMENTATION.md
+
+# Pretrained Weights & Neural Models (Acquired via download_model.py)
+models/*.pt
+models/*.onnx
+models/*.engine
+models/*.bin
+!models/.gitkeep
+
+# Runtime Execution Logs
+logs/*
+!logs/.gitkeep
+*.log
+
+# Python Bytecode and Compilation Caches
+__pycache__/
+*.py[cod]
+*$py.class
+tests/__pycache__/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Operating System Specific Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor & IDE Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Test, Profiling & Coverage Caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
